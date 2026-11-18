@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: brown;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: white;
+}
+
+header h2 {
+    color: brown;
+}
+
+nav a {
+    text-decoration: none;
+    color: brown;
+    margin-left: 25px;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background-color: bisque;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Section */
+
+.about {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: bisque;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
